@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -16,6 +17,18 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      // Images
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            // publicPath: 'images',
+            outputPath: 'images',
+            name: '[name].[ext]'
+          }
+        }],
       },
     ],
   },

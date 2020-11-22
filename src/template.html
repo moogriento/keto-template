@@ -4,7 +4,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link ref="stylesheet" href="https://unpkg.com/modern-normalize@1.0.0/modern-normalize.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Ultra&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ultra&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -13,48 +13,324 @@
         menu
       </nav>
     </header>
+
     <main class="container">
+      <article class="recipe">
+        <header id="header" class="hero">
+          <h1>
+            KETO LETTUCE<br>
+            <em>
+              TACOS
+            </em>
+          </h1>
+          <div class="recipe-metadata">
+            <div class="item">
+              <img src="images/meta-cuisine.svg" alt="Cuisine" />
+              Polish
+            </div>
+            <div class="item">
+              <img src="images/meta-level-1.svg" alt="Level" />
+              Easy
+            </div>
+            <div class="item">
+              <img src="images/meta-servings.svg" alt="Servings" />
+              4 servings
+            </div>
+            <div class="item">
+              <img src="images/meta-time.svg" alt="Time" />
+              40 mins
+            </div>
+            <div class="item">
+              <img src="images/meta-nutrition.svg" alt="Nutrition" />
+              305 cals
+            </div>
+          </div>
+        </header>
 
-      <article>
-        <h1>
-          KETO LETTUCE<br>
-          <span>
-            TACOS
-          </span>
-        </h1>
-        <section>
-          Images
-        </section>
-        <p>
-          Everyone loves a classic vanillas cupcake with chocolate frosting, right?! I don’t think I’ve ever met a person who prefers a chocolate cake with a vanilla frosting! Either way you take your cupcakes, this classic keto cupcake recipe is the perfect dessert recipe to have in your arsenal for upcoming birthday parties or bake sales!
-        </p>
-
-        <article>
-          <header>
-
-          </header>
-          <aside>
-            Ingredients
-          </aside>
-          <section>
-            Instructions
-          </section>
-          <footer>
-            Nutrion Facts!
-          </footer>
-        </article>
-
-        <section>
-          <h2>You may also like...</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus. Praesent fermentum lacus risus, eu viverra nibh viverra sed. Maecenas leo dui, vestibulum nec libero lacinia, auctor viverra nulla. Sed scelerisque nec justo ut luctus. Pellentesque venenatis dictum lectus ut vestibulum. Ut mollis dapibus consectetur. Vestibulum volutpat libero in dolor imperdiet lobortis. Pellentesque id nisi vitae ante pretium laoreet eu eget purus. Cras et ultrices sem, vel varius mi. Aliquam erat volutpat. Nunc porta tempus ex ac feugiat. Suspendisse maximus turpis a sem sollicitudin molestie. Vivamus ut nisl lacus. Mauris nisl odio, facilisis consectetur risus vitae, pellentesque accumsan nunc. Integer imperdiet, enim et rhoncus egestas, nisl tortor placerat diam, quis rutrum dolor ante nec turpis. Sed sit amet diam odio.
+        <section class="recipe-summary">
+          <nav class="social-menu">
+            <a href="#" title="Facebook" class="center-content">
+              <svg class="logo" width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>social/facebook</title>
+                <g id="social/facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                   <path d="M473.113281,385.25 L487,294.761719 L400.173828,294.761719 L400.173828,236.041016 C400.173828,211.285156 412.302734,187.154297 451.189453,187.154297 L490.662109,187.154297 L490.662109,110.113281 C490.662109,110.113281 454.841797,104 420.59375,104 C349.089844,104 302.351562,147.339844 302.351562,225.796875 L302.351562,294.761719 L222.869141,294.761719 L222.869141,385.25 L302.351562,385.25 L302.351562,604 L400.173828,604 L400.173828,385.25 L473.113281,385.25 Z" id="Logo" fill="#373C3F" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+            </a>
+            <a href="#" title="Pinterest" class="center-content">
+              <svg class="logo" width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>social/pinterest</title>
+                <g id="social/pinterest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M610,360 C610,498.104839 498.104839,610 360,610 C334.193548,610 309.395161,606.068548 286.008065,598.810484 C296.189516,582.177419 311.41129,554.959677 317.056452,533.28629 C320.080645,521.592742 332.580645,473.810484 332.580645,473.810484 C340.745968,489.334677 364.53629,502.540323 389.83871,502.540323 C465.241935,502.540323 519.576613,433.185484 519.576613,346.995968 C519.576613,264.435484 452.137097,202.641129 365.443548,202.641129 C257.580645,202.641129 200.221774,275.020161 200.221774,353.951613 C200.221774,390.645161 219.778226,436.310484 250.927419,450.826613 C255.665323,453.044355 258.185484,452.03629 259.294355,447.5 C260.100806,444.072581 264.334677,427.03629 266.25,419.173387 C266.854839,416.653226 266.552419,414.435484 264.53629,412.016129 C254.354839,399.415323 246.08871,376.431452 246.08871,354.959677 C246.08871,299.818548 287.822581,246.491935 358.991935,246.491935 C420.383065,246.491935 463.427419,288.326613 463.427419,348.205645 C463.427419,415.846774 429.254032,462.721774 384.798387,462.721774 C360.302419,462.721774 341.854839,442.459677 347.802419,417.560484 C354.858871,387.822581 368.467742,355.766129 368.467742,334.294355 C368.467742,315.141129 358.185484,299.112903 336.814516,299.112903 C311.71371,299.112903 291.552419,325.020161 291.552419,359.798387 C291.552419,381.975806 299.012097,396.895161 299.012097,396.895161 C299.012097,396.895161 274.314516,501.532258 269.778226,521.08871 C264.737903,542.66129 266.754032,573.104839 268.870968,592.862903 C175.927419,556.471774 110,465.947581 110,360 C110,221.895161 221.895161,110 360,110 C498.104839,110 610,221.895161 610,360 Z" id="Logo" fill="#373C3F" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+            </a>
+            <a href="#" title="Tumblr" class="center-content">
+              <svg class="logo" width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>social/tumblr</title>
+                <g id="social/tumblr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M509.8,584.3 C496.2,598.8 459.8,616 412.4,616 C291.6,616 265.4,527.2 265.4,475.4 L265.4,331.4 L217.9,331.4 C212.4,331.4 207.9,326.9 207.9,321.4 L207.9,253.4 C207.9,246.2 212.4,239.8 219.2,237.4 C281.2,215.6 300.7,161.4 303.5,120.3 C304.3,109.3 310,104 319.6,104 L390.5,104 C396,104 400.5,108.5 400.5,114 L400.5,229.2 L483.5,229.2 C489,229.2 493.5,233.6 493.5,239.1 L493.5,320.8 C493.5,326.3 489,330.8 483.5,330.8 L400.1,330.8 L400.1,464 C400.1,498.2 423.8,517.6 468.1,499.8 C472.9,497.9 477.1,496.6 480.8,497.6 C484.3,498.5 486.6,501 488.2,505.5 L510.2,569.8 C512,574.8 513.5,580.4 509.8,584.3 Z" id="Logo" fill="#373C3F" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+            </a>
+            <a href="#" title="Twitter" class="center-content">
+              <svg class="logo" width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>social/twitter</title>
+                <g id="social/twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M558.603516,258.285156 C558.920898,262.726563 558.920898,267.168945 558.920898,271.610352 C558.920898,407.079102 455.8125,563.170898 267.360352,563.170898 C209.301758,563.170898 155.368164,546.355469 110,517.168945 C118.249023,518.120117 126.179688,518.4375 134.746094,518.4375 C182.651367,518.4375 226.750977,502.257813 261.966797,474.65625 C216.916016,473.704102 179.162109,444.199219 166.154297,403.589844 C172.5,404.541016 178.844727,405.175781 185.507812,405.175781 C194.708008,405.175781 203.90918,403.90625 212.474609,401.686523 C165.520508,392.167969 130.303711,350.924805 130.303711,301.115234 L130.303711,299.84668 C143.945312,307.460938 159.80957,312.219727 176.623047,312.853516 C149.021484,294.452148 130.938477,263.043945 130.938477,227.510742 C130.938477,208.475586 136.013672,191.026367 144.897461,175.797852 C195.341797,237.980469 271.166992,278.588867 356.191406,283.03125 C354.605469,275.416992 353.65332,267.486328 353.65332,259.554688 C353.65332,203.082031 399.338867,157.080078 456.12793,157.080078 C485.632812,157.080078 512.282227,169.453125 531.000977,189.44043 C554.160156,184.999023 576.368164,176.432617 596.039062,164.694336 C588.423828,188.489258 572.244141,208.476562 550.988281,221.166016 C571.610352,218.946289 591.597656,213.234375 609.998047,205.303711 C596.041016,225.607422 578.59082,243.69043 558.603516,258.285156 Z" id="Logo" fill="#373C3F" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+            </a>
+          </nav>
+          <p class="content">
+            Everyone loves a classic vanillas cupcake with chocolate frosting, right?! I don’t think I’ve ever met a person who prefers a chocolate cake with a vanilla frosting! Either way you take your cupcakes, this classic keto cupcake recipe is the perfect dessert recipe to have in your arsenal for upcoming birthday parties or bake sales!
           </p>
         </section>
+
+        <section class="recipe-description">
+          <div class="button-jump-container top">
+            <a href="#recipe" class="button-jump">
+              <svg class="arrow" width="24px" height="24px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Icon/ArrowDown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M373.208152,170.070305 L393.542478,189.889521 C402.152507,198.281442 402.152507,211.851356 393.542478,220.154001 L215.57133,393.70606 C206.961301,402.09798 193.038699,402.09798 184.520266,393.70606 L6.45752233,220.154001 C-2.15250744,211.76208 -2.15250744,198.192166 6.45752233,189.889521 L26.791848,170.070305 C35.4934738,161.589108 49.6908633,161.76766 58.209297,170.427408 L163.361575,278.004687 L163.361575,21.4261801 C163.361575,9.5525053 173.162354,0 185.34463,0 L214.65537,0 C226.837646,0 236.638425,9.5525053 236.638425,21.4261801 L236.638425,278.004687 L341.790703,170.427408 C350.309137,161.678384 364.506526,161.499833 373.208152,170.070305 Z" id="Icon/DownArrow" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+              JUMP TO RECIPE
+            </a>
+          </div>
+
+          <p>
+            Torquent accumsan faucibus venenatis magnis condimentum porttitor quisque, montes parturient inceptos viverra suscipit hendrerit arcu, mus euismod tortor est potenti augue. Sociis nunc eget turpis tempus sociosqu ornare convallis ullamcorper conubia, nisi massa bibendum justo tristique scelerisque magna. Accumsan eleifend eget vitae curae lobortis libero tincidunt litora rutrum, in sapien lacinia hac euismod massa himenaeos
+          </p>
+          <h2 class="subtitle">
+            LOREM IPSUM DOLOR
+          </h2>
+          <img src="images/img-keto-test-3.jpg" alt="Keto Lettuce Taco" class="recipe-description-image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit dapibus aliquet enim morbi, habitant accumsan litora cubilia donec cras fringilla facilisis nam himenaeos integer molestie, vestibulum interdum euismod posuere iaculis placerat semper proin lectus condimentum. Feugiat molestie hendrerit augue iaculis nunc, tortor per libero turpis erat aptent, in a lectus vulputate. Proin congue cras gravida curae phasellus urna cursus laoreet, enim vulputate felis netus mus facilisis justo, curabitur varius consequat sociis ad mattis ornare. Bibendum facilisis duis cum ac tortor quam justo nisl sociis, primis nam in hac inceptos velit fusce magna viverra, sociosqu penatibus aptent ultrices netus ante porta cubilia, nullam vulputate platea fames donec pellentesque suspendisse pharetra.
+          </p>
+          <h2 class="subtitle">
+            LOREM IPSUM DOLOR
+          </h2>
+          <p>
+            Et nostra mattis risus quis scelerisque sagittis bibendum felis habitant, tortor gravida vulputate iaculis taciti torquent fermentum sociosqu, augue praesent nisi viverra auctor proin eu malesuada. Malesuada aliquet nam nascetur lacinia cras vel urna tempor penatibus justo, odio ultrices vehicula libero cubilia volutpat sem erat posuere. Nisl semper vel felis ligula pharetra auctor metus aenean fames vestibulum sagittis, fringilla hendrerit platea cursus mi eros non eu arcu dignissim.
+          </p>
+
+          <div class="button-jump-container bottom">
+            <a href="#header" class="button-jump">
+              <svg class="arrow" width="24px" height="24px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Icon/ArrowUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M373.208152,170.070305 L393.542478,189.889521 C402.152507,198.281442 402.152507,211.851356 393.542478,220.154001 L215.57133,393.70606 C206.961301,402.09798 193.038699,402.09798 184.520266,393.70606 L6.45752233,220.154001 C-2.15250744,211.76208 -2.15250744,198.192166 6.45752233,189.889521 L26.791848,170.070305 C35.4934738,161.589108 49.6908633,161.76766 58.209297,170.427408 L163.361575,278.004687 L163.361575,21.4261801 C163.361575,9.5525053 173.162354,0 185.34463,0 L214.65537,0 C226.837646,0 236.638425,9.5525053 236.638425,21.4261801 L236.638425,278.004687 L341.790703,170.427408 C350.309137,161.678384 364.506526,161.499833 373.208152,170.070305 Z" id="Icon/DownArrow" fill="#FFFFFF" fill-rule="nonzero" transform="translate(200.000000, 200.000000) scale(1, -1) translate(-200.000000, -200.000000) "></path>
+                </g>
+              </svg>
+              BACK TO TOP
+            </a>
+          </div>
+        </section>
+
+        <article id="recipe" class="recipe-card">
+          <header class="recipe-header">
+            <div class="name-content">
+              <h2 class="recipe-title">
+                Keto Letuce Tacos
+              </h2>
+              <div class="ranking">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="19.143" viewBox="0 0 20 19.143">
+                  <path id="star-solid" d="M29.427.653,26.986,5.6l-5.462.8a1.2,1.2,0,0,0-.662,2.041l3.951,3.85-.935,5.439a1.2,1.2,0,0,0,1.735,1.26L30.5,16.421l4.886,2.568a1.2,1.2,0,0,0,1.735-1.26l-.935-5.439,3.951-3.85A1.2,1.2,0,0,0,39.475,6.4l-5.462-.8L31.572.653A1.2,1.2,0,0,0,29.427.653Z" transform="translate(-20.5 0.013)"/>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="19.143" viewBox="0 0 20 19.143">
+                  <path id="star-solid" d="M29.427.653,26.986,5.6l-5.462.8a1.2,1.2,0,0,0-.662,2.041l3.951,3.85-.935,5.439a1.2,1.2,0,0,0,1.735,1.26L30.5,16.421l4.886,2.568a1.2,1.2,0,0,0,1.735-1.26l-.935-5.439,3.951-3.85A1.2,1.2,0,0,0,39.475,6.4l-5.462-.8L31.572.653A1.2,1.2,0,0,0,29.427.653Z" transform="translate(-20.5 0.013)"/>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="19.143" viewBox="0 0 20 19.143">
+                  <path id="star-solid" d="M29.427.653,26.986,5.6l-5.462.8a1.2,1.2,0,0,0-.662,2.041l3.951,3.85-.935,5.439a1.2,1.2,0,0,0,1.735,1.26L30.5,16.421l4.886,2.568a1.2,1.2,0,0,0,1.735-1.26l-.935-5.439,3.951-3.85A1.2,1.2,0,0,0,39.475,6.4l-5.462-.8L31.572.653A1.2,1.2,0,0,0,29.427.653Z" transform="translate(-20.5 0.013)"/>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="19.143" viewBox="0 0 20 19.143">
+                  <path id="star-solid" d="M29.427.653,26.986,5.6l-5.462.8a1.2,1.2,0,0,0-.662,2.041l3.951,3.85-.935,5.439a1.2,1.2,0,0,0,1.735,1.26L30.5,16.421l4.886,2.568a1.2,1.2,0,0,0,1.735-1.26l-.935-5.439,3.951-3.85A1.2,1.2,0,0,0,39.475,6.4l-5.462-.8L31.572.653A1.2,1.2,0,0,0,29.427.653Z" transform="translate(-20.5 0.013)"/>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="19.143" viewBox="0 0 20 19.143">
+                  <path id="star-solid" d="M29.427.653,26.986,5.6l-5.462.8a1.2,1.2,0,0,0-.662,2.041l3.951,3.85-.935,5.439a1.2,1.2,0,0,0,1.735,1.26L30.5,16.421l4.886,2.568a1.2,1.2,0,0,0,1.735-1.26l-.935-5.439,3.951-3.85A1.2,1.2,0,0,0,39.475,6.4l-5.462-.8L31.572.653A1.2,1.2,0,0,0,29.427.653Z" transform="translate(-20.5 0.013)"/>
+                </svg>
+                <span class="votes">
+                  5 from 5 votes
+                </span>
+              </div>
+            </div>
+            <div class="metadata-content recipe-metadata in-recipe">
+              <div class="item">
+                <img src="images/meta-cuisine.svg" alt="Cuisine" />
+                Polish
+              </div>
+              <div class="item">
+                <img src="images/meta-level-1.svg" alt="Level" />
+                Easy
+              </div>
+              <div class="item">
+                <img src="images/meta-servings.svg" alt="Servings" />
+                4 servings
+              </div>
+              <div class="item">
+                <img src="images/meta-time.svg" alt="Time" />
+                40 mins
+              </div>
+              <div class="item">
+                <img src="images/meta-nutrition.svg" alt="Nutrition" />
+                305 cals
+              </div>
+            </div>
+            <div class="summary-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus. Praesent fermentum lacus risus, eu viverra nibh viverra sed. Maecenas leo dui, vestibulum nec libero lacinia, auctor viverra nulla. Sed scelerisque nec justo ut luctus. Pellentesque venenatis dictum lectus ut vestibulum. Ut mollis dapibus consectetur.
+            </div>
+          </header>
+          <aside class="ingredients">
+            <ul>
+              <li>
+                <span class="measure">2 tbsp</span>
+                <span class="ingredient">avocado oil</span>
+              </li>
+              <li>
+                <span class="measure">1/4</span>
+                <span class="ingredient">onion, sliced</span>
+              </li>
+              <li>
+                <span class="measure">2</span>
+                <span class="ingredient">garlic, minced</span>
+              </li>
+              <li>
+                <span class="measure">1 inch</span>
+                <span class="ingredient">fresh ginger, grated</span>
+              </li>
+              <li>
+                <span class="measure">2 tbsp</span>
+                <span class="ingredient">tomato pasta</span>
+              </li>
+              <li>
+                <span class="measure">3/4 cup</span>
+                <span class="ingredient">water</span>
+              </li>
+              <li>
+                <span class="measure">1 tsp</span>
+                <span class="ingredient">ground turmeric</span>
+              </li>
+              <li>
+                <span class="measure">1 tbsp</span>
+                <span class="ingredient">coriander</span>
+              </li>
+              <li>
+                <span class="measure">1 tbsp</span>
+                <span class="ingredient">garam masala</span>
+              </li>
+              <li>
+                <span class="measure">1 tsp</span>
+                <span class="ingredient">red chili powder</span>
+              </li>
+              <li>
+                <span class="measure">1/2 tsp</span>
+                <span class="ingredient">ground cinnamon</span>
+              </li>
+              <li>
+                <span class="measure">1 tbsp</span>
+                <span class="ingredient">pink Himalayan salt</span>
+              </li>
+              <li>
+                <span class="measure">2</span>
+                <span class="ingredient">bay leaves</span>
+              </li>
+              <li>
+                <span class="measure">2 lbs</span>
+                <span class="ingredient">chuck roast, cubed</span>
+              </li>
+            </ul>
+          </aside>
+          <section class="instructions">
+            <ul>
+              <li>
+                <div class="step">
+                  1
+                </div>
+                <div class="instruction">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </li>
+              <li>
+                <div class="step">
+                  2
+                </div>
+                <div class="instruction">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus.
+                </div>
+              </li>
+              <li>
+                <div class="step">
+                  3
+                </div>
+                <div class="instruction">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus. Praesent fermentum lacus risus, eu viverra nibh viverra sed.
+                </div>
+              </li>
+              <li>
+                <div class="step">
+                  4
+                </div>
+                <div class="instruction">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus.
+                </div>
+              </li>
+              <li>
+                <div class="step">
+                  5
+                </div>
+                <div class="instruction">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </li>
+            </ul>
+          </section>
+          <footer class="nutrition">
+            Nutrition Facts!
+          </footer>
+        </article>
       </article>
 
-    </main>
-    <footer>
 
+      <!-- Start: You may also like -->
+      <section>
+        <h2>You may also like...</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est vitae tristique maximus. Praesent fermentum lacus risus, eu viverra nibh viverra sed. Maecenas leo dui, vestibulum nec libero lacinia, auctor viverra nulla. Sed scelerisque nec justo ut luctus. Pellentesque venenatis dictum lectus ut vestibulum. Ut mollis dapibus consectetur.
+        </p>
+        <ul>
+          <li>
+            <article>
+
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- End: You may also like -->
+    </main>
+
+
+    <footer class="footer">
+      <nav>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/facebook.svg" alt="Facebook" class="footer-social" />
+        </a>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/instagram.svg" alt="Instagram" class="footer-social" />
+        </a>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/twitter.svg" alt="Twitter" class="footer-social" />
+        </a>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/pinterest.svg" alt="Pinterest" class="footer-social" />
+        </a>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/tumblr.svg" alt="Tumblr" class="footer-social" />
+        </a>
+        <a href="#" target="_blank" class="footer-social-link">
+          <img src="images/youtube.svg" alt="YouTube" class="footer-social" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>

@@ -1,8 +1,17 @@
 html {
   font-size: $base-font-size;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  color: $color-primary;
+  background-color: $color-background;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

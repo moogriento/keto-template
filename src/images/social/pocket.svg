@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>social/pocket</title>
+    <g id="social/pocket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M543.6,160 L176.6,160 C154.5,160 136,178.5 136,200.6 L136,335.8 C136,460.5 235.7,560 360.2,560 C484.2,560 584,460.5 584,335.8 L584,200.6 C584,178.2 566.3,160 543.6,160 Z M381.6,428.5 C369.2,440.3 350.2,439.6 339.2,428.5 C225.5,319.6 224.3,323.4 224.3,305.3 C224.3,288.4 238.1,274.6 255,274.6 C272,274.6 271.1,278.4 360.2,363.9 C450.8,277 448.8,274.6 465.7,274.6 C482.6,274.6 496.4,288.4 496.4,305.3 C496.4,323.1 493.5,321 381.6,428.5 L381.6,428.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
