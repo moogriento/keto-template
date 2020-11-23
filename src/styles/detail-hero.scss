@@ -1,0 +1,126 @@
+.recipe-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 35rem;
+  box-sizing: border-box;
+  z-index: -1;
+  margin-top: -($nav-height);
+  margin-left: -($container-x-padding-sm);
+  margin-right: -($container-x-padding-sm);
+  display: block;
+  position: relative;
+
+  .recipe-hero-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    h1 {
+      text-transform: uppercase;
+      font-family: Ultra;
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+      color: $color-white;
+    }
+
+    em {
+      font-size: 3.8rem;
+      font-style: normal;
+    }
+  }
+
+  .recipe-hero-metadata {
+    display: flex;
+    justify-content: center;
+    border-top: 2px dashed $color-white;
+    color: $color-white;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+
+    .item {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 0 0.3rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        top: 30%;
+        left: -0.5rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 0.4rem;
+        position: absolute;
+        background-color: $color-white;
+      }
+
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+      width: 3rem;
+      height: 3rem;
+
+      path {
+        fill: $color-white;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .recipe-hero {
+    min-height: 25rem;
+    margin-top: 0;
+    margin-left: -($container-x-padding-md);
+    margin-right: -($container-x-padding-md);
+
+    .recipe-hero-wrapper {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .recipe-hero {
+    margin-left: -($container-x-padding-lg);
+    margin-right: -($container-x-padding-lg);
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .recipe-hero {
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 40rem;
+
+    .recipe-hero-wrapper {
+      display: block;
+
+      .title {
+        display: none;
+      }
+
+      .recipe-hero-metadata {
+        border-top: none;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-2xl) {
+
+}

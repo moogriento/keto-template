@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Hamburger</title>
+    <g id="Icon/Hamburger" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#373C3F" fill-rule="nonzero" x="110" y="110" width="180" height="36"></rect>
+        <rect id="Rectangle-Copy" fill="#373C3F" fill-rule="nonzero" x="110" y="182" width="180" height="36"></rect>
+        <rect id="Rectangle-Copy-2" fill="#373C3F" fill-rule="nonzero" x="110" y="254" width="180" height="36"></rect>
+    </g>
+</svg>
